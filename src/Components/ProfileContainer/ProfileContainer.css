@@ -1,0 +1,100 @@
+body {
+    background-color: #f5e5dc;
+}
+
+.profile {
+    display: flex;
+}
+
+.row1 {
+    display: flex;
+    width: 100%;
+}
+
+.row1 p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #002b8e;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 10px;
+    height: 20vh;
+    box-shadow: 4px 0px 50px 5px rgba(0,0,0,0.1);
+}
+
+.row1 .col1 {
+    width: 40%;
+}
+
+.row2 {
+    width: 100%;
+}
+
+.row2 p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #002b8e;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 10px;
+    height: 20vh;
+    box-shadow: 4px 0px 50px 5px rgba(0,0,0,0.1);
+}
+
+.row3 {
+    width: 100%;
+}
+
+.row3 p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #002b8e;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 10px;
+    height: 40vh;
+    box-shadow: 4px 0px 50px 5px rgba(0,0,0,0.1);
+}
+
+.timeline {
+    display: flex;
+    background-color: white;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 4px 0px 50px 5px rgba(0,0,0,0.1);
+    width: 30%;
+}
+
+.roadmap {
+    display: flex;
+    width: 100%;
+}
+
+.timeline .line {
+    border-left: 4px solid #002b8e;
+    height: 100%;
+}
+
+.tasks {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tasks ul {
+    list-style: none;
+    align-items: center;
+}
+
+.tasks li {
+    font-size: 1.2rem;
+    line-height: 12rem;
+    font-weight: bold;
+    color: #002b8e;
+}

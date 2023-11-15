@@ -1,7 +1,7 @@
 import React from "react";
-import HeaderBar from '../Components/HeaderBar';
-import NavBar from '../Components/NavBar';
-import Container from '../Components/Container';
+import HeaderBar from '../Components/HeaderBar/HeaderBar';
+import Container from '../Components/HomeContainer/Container';
+import NavBar from '../Components/NavBar/NavBar';
 
 function Home() {
     return (
@@ -13,7 +13,7 @@ function Home() {
                 <HeaderBar className='headerBar'name="Quentin"/>
                 <Container className='container'/>
         </div>
-        
+
     </div>
     );
 }

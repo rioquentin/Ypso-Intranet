@@ -6,9 +6,11 @@ import Profile from './pages/Profile.js';
 import Settings from './pages/Settings.js';
 
 
+
+
 function App() {
   return (
-    <Routes>
+      <Routes>
         <Route path='/' element={<Home />}/>
         <Route path='/profile' element={<Profile />}/>
         <Route path='/messages' element={<Messages />}/>

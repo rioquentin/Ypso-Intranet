@@ -3,6 +3,7 @@ import HeaderBar from '../Components/HeaderBar/HeaderBar';
 import Container from '../Components/HomeContainer/Container';
 import NavBar from '../Components/NavBar/NavBar';
 
+
 function Home() {
     return (
         <div className='main'>
@@ -10,7 +11,7 @@ function Home() {
             <NavBar/>
         </div>
         <div className='page'>
-                <HeaderBar className='headerBar'name="Quentin"/>
+                <HeaderBar className='CurrentUser' name="CurrentUser"/>
                 <Container className='container'/>
         </div>
 

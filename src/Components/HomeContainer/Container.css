@@ -4,6 +4,7 @@ body {
 
 .home {
     display: flex;
+    justify-content: space-around;
 }
 
 .row1 {
@@ -25,7 +26,7 @@ body {
 
 .row1 .col1 {
     width: 40%;
-} 
+}
 
 .row2 {
     width: 100%;

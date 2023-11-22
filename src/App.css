@@ -2,28 +2,3 @@ body {
     margin: 0;
     padding: 0;;
 }
-.main {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-.sideBar {
-    width: 0;
-    background-color: #002b8e;
-    transition: 1s;
-    height: 100vh;
-    max-width: 200px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.sidebar-open .sideBar {
-    width: 100%;
-}
-
-.header-bar {
-    width: 100%
-}
-

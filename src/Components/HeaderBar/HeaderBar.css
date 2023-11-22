@@ -62,3 +62,8 @@ body {
     align-items: center;
     gap: 1rem;
 }
+
+.burger button {
+    border: none;
+    cursor: pointer;
+}

@@ -56,7 +56,7 @@ After you've finished updating your current module and you want to add it to the
 Example: If I want to merge my branch into main, the command is ```git pull origin main```  
 There is probably a need to resolve __merge conflicts__ when doing that. It's a pretty straightforward method that consists in comparing both versions of a file to then decide what the output in the final version should be.  
   
-  Finally, if there are no conflicts to solve left, you can go the the github page and click on **pull requests**. Then click on **New pull request**.  
-  Select the branch you want to merge to as **base** and your module's branch as **compare**, then click on **Create pull request**
+Finally, if there are no conflicts to solve left, you can go the the github page and click on **pull requests**. Then click on **New pull request**.  
+Select the branch you want to merge to as **base** and your module's branch as **compare**, then click on **Create pull request**
 
-  Once all of this is done, ask to one of the administrators of the project to check and validate your pull request. Once he's validated it, you're done!
+Once all of this is done, ask to one of the administrators of the project to check and validate your pull request. Once he's validated it, you're done!

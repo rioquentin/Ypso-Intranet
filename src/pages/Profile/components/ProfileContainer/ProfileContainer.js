@@ -1,5 +1,5 @@
 import React from "react";
-import "./ProfileContainer.css";
+import "./ProfileContainer.scss";
 
 function ProfileContainer() {
     return (

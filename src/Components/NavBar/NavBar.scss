@@ -1,3 +1,6 @@
+@import "../../styles/variables.scss";
+
+
 body {
     margin: 0;
     padding: 0;
@@ -7,7 +10,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
-    background-color: #002b8e;
+    background-color: $blue;
 }
 
 .title {
@@ -18,7 +21,7 @@ body {
     padding: 0;
     font-size: 1rem;
     font-weight: bold;
-    color: white;
+    color: $white;
     height: 60px;
 }
 
@@ -46,7 +49,7 @@ body {
 
 .list a {
     text-decoration: none;
-    color: white;
+    color: $white;
     margin: 0 1rem;
     line-height: 80px;
 }

@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import Layout from './layouts/RootLayout/Layout.js';
 import Home from './pages/Home/Home.js';
 import Messages from './pages/Messages/Messages.js';
@@ -13,9 +13,9 @@ function App() {
     <Routes>
 
           <Route index element={<Home />}/>
-          <Route path='/profile' element={<Profile />}/>
-          <Route path='/messages' element={<Messages />}/>
-          <Route path='/settings' element={<Settings />}/>
+          <Route path='profile' element={<Profile />}/>
+          <Route path='messages' element={<Messages />}/>
+          <Route path='settings' element={<Settings />}/>
     </Routes>
     </Layout>
   );

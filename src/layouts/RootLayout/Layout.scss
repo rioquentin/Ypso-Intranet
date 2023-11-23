@@ -1,3 +1,6 @@
+@import "../../styles/variables.scss";
+
+
 .page {
 	width: 100%;
 }
@@ -11,8 +14,8 @@
 
 .sidebar {
     width: 0;
-    background-color: #002b8e;
-    transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: $blue;
+    transition: width 0s;
     height: 100vh;
     max-width: 200px;
     overflow: hidden;
@@ -21,6 +24,7 @@
 
 .sidebar-open.sidebar {
     width: 100%;
+    transition: width 0.5s ease-in;
 }
 
 .header-bar {

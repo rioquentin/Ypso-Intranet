@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# Ypso - Intranet
+This repository is the intranet for the YPSO junior enterprise, founded by Holberton School France Students.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Ypso members - Guidelines
+1. Adding a new page
 
-## Available Scripts
+When adding a new page, let's say a Dashboard, I advise for creating a new folder in pages/ structured like this:
 
-In the project directory, you can run:
+___
+*/Dashboard*
 
-### `npm start`
+*  */components*
+	+ */DashboardComponent1*
+		+ *DashboardComponent1.js*
+		+ *DashboardComponent1.scss*
+	+ */DashboardComponent2*
+		+ *DashboardComponent2.js*
+		+ *DashboardComponent2.scss*
+*  *Dashboard.js*
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+___
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. Module types
 
-### `npm test`
+- Pages -> Module that corresponds to a route
+- Layouts -> Refers to the global layout of the website
+- Components -> Individual page component (stylized button, card, ....)
+- Utils -> Services/Methods reused often (ex: API call to YPSO database)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+___
 
-### `npm run build`
+3. Styling
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+For colors, try to use a globalized style, but don't hesitate to add new colors to the current theme.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To use the default theme, import the file styles/variables.scss in your scss file and use the corresponding variable like this:
+```
+@import "../../../../styles/variables.scss";
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+.example {
+	background-color: $variable;
+}
+```
 
-### `npm run eject`
+___
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. Contributing to the project
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+This part is just a guide for merging a module to the main branch for those not yet familiar with Git.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+First of all for a new module we ask for you to create a **new branch** specific to the part you're gonna implement.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+After you've finished updating your current module and you want to add it to the project, follow these steps:
 
-## Learn More
+ When you've pushed your last commit, first of all **pull** the last version of the branch you desire to merge into.  
+Example: If I want to merge my branch into main, the command is ```git pull origin main```  
+There is probably a need to resolve __merge conflicts__ when doing that. It's a pretty straightforward method that consists in comparing both versions of a file to then decide what the output in the final version should be.  
+  
+  Finally, if there are no conflicts to solve left, you can go the the github page and click on **pull requests**. Then click on **New pull request**.  
+  Select the branch you want to merge to as **base** and your module's branch as **compare**, then click on **Create pull request**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  Once all of this is done, ask to one of the administrators of the project to check and validate your pull request. Once he's validated it, you're done!

@@ -2,7 +2,8 @@ import { faBars, faBell, faEnvelope, faHome, faUserCircle } from '@fortawesome/f
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from "react";
 import { toggleSidebar } from '../../utils/ToggleSidebar.js'
-import "./HeaderBar.css";
+import "./HeaderBar.scss";
+import { Link } from 'react-router-dom';
 
 function NavBar(props) {
   return (
@@ -10,11 +11,11 @@ function NavBar(props) {
         <div className="burger">
             <button onClick={toggleSidebar} className="menu"><FontAwesomeIcon icon={faBars} style={{color: "#ffffff",}} /></button>
         </div>
-        <a href="/" className="logo">YPSO</a>
+        <Link to="/" className="logo">YPSO</Link>
         <input type="text" className="search-bar" placeholder="Search" />
         <div className="icons">
-            <a href="/"><FontAwesomeIcon icon={faHome} style={{color: "#ffffff",}} /></a>
-            <a href="/"><FontAwesomeIcon icon={faEnvelope} style={{color: "#ffffff",}} /></a>
+            <Link to="/"><FontAwesomeIcon icon={faHome} style={{color: "#ffffff",}} /></Link>
+            <Link to="/messages"><FontAwesomeIcon icon={faEnvelope} style={{color: "#ffffff",}} /></Link>
             <a href="/"><FontAwesomeIcon icon={faBell} style={{color: "#ffffff",}} /></a>
         </div>
         <div className="usr">

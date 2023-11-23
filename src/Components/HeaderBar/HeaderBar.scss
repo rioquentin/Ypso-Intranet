@@ -1,3 +1,5 @@
+@import "../../styles/variables.scss";
+
 * {
     box-sizing: border-box;
 }
@@ -31,9 +33,9 @@ body {
     flex: 1;
     justify-content: space-between;
     align-items: center;
-    color: white;
+    color: $white;
     padding: 0 1rem;
-    background-color: #002b8e;
+    background-color: $blue;
 }
 
 .header-bar ul {
@@ -61,4 +63,9 @@ body {
     display: flex;
     align-items: center;
     gap: 1rem;
+}
+
+.burger button {
+    border: none;
+    cursor: pointer;
 }

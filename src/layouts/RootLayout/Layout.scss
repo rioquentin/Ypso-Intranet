@@ -1,7 +1,10 @@
-body {
-    margin: 0;
-    padding: 0;;
+@import "../../styles/variables.scss";
+
+
+.page {
+	width: 100%;
 }
+
 .main {
     box-sizing: border-box;
     margin: 0;
@@ -9,21 +12,21 @@ body {
     display: flex;
 }
 
-.sideBar {
+.sidebar {
     width: 0;
-    background-color: #002b8e;
-    transition: 1s;
+    background-color: $blue;
+    transition: width 0s;
     height: 100vh;
     max-width: 200px;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
-.sidebar-open .sideBar {
+.sidebar-open.sidebar {
     width: 100%;
+    transition: width 0.5s ease-in;
 }
 
 .header-bar {
     width: 100%
 }
-

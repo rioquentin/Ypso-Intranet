@@ -1,9 +1,9 @@
 import React from "react";
-import "./Container.css";
+import "./ProfileContainer.scss";
 
-function Container() {
+function ProfileContainer() {
     return (
-        <div className="home">
+        <div className="profile">
             <div className="cards">
                 <div className="row1">
                     <div className="col1">
@@ -11,16 +11,6 @@ function Container() {
                     </div>
                     <div className="col2">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt velit leo, id dapibus nisl tristique ut.</p>
-                    </div>
-                </div>
-                <div className="row2">
-                    <div className="col1">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt velit leo, id dapibus nisl tristique ut.</p>
-                    </div>
-                </div>
-                <div className="row3">
-                    <div className="col1">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt velit leo, id dapibus nisl tristique ut. </p>
                     </div>
                 </div>
             </div>
@@ -40,4 +30,4 @@ function Container() {
     );
 }
 
-export default Container;
+export default ProfileContainer;

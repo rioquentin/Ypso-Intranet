@@ -1,10 +1,10 @@
-import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import Layout from './Layout/Layout.js';
-import Home from './pages/Home.js';
-import Messages from './pages/Messages.js';
-import Profile from './pages/Profile.js';
-import Settings from './pages/Settings.js';
+import Layout from './layouts/RootLayout/Layout.js';
+import Home from './pages/Home/Home.js';
+import Messages from './pages/Messages/Messages.js';
+import Profile from './pages/Profile/Profile.js';
+import Settings from './pages/Settings/Settings.js';
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
   return (

@@ -1,14 +1,14 @@
 import { faBars, faBell, faEnvelope, faHome, faUserCircle } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from "react";
-import toggleMenu from '../script.js';
+import { toggleSidebar } from '../../utils/ToggleSidebar.js'
 import "./HeaderBar.css";
 
 function NavBar(props) {
   return (
     <header className="header-bar" id='header-bar'>
         <div className="burger">
-            <button onClick={toggleMenu} className="menu"><FontAwesomeIcon icon={faBars} style={{color: "#ffffff",}} /></button>
+            <button onClick={toggleSidebar} className="menu"><FontAwesomeIcon icon={faBars} style={{color: "#ffffff",}} /></button>
         </div>
         <a href="/" className="logo">YPSO</a>
         <input type="text" className="search-bar" placeholder="Search" />

@@ -1,11 +1,11 @@
-import HeaderBar from "../Components/HeaderBar/HeaderBar";
-import NavBar from "../Components/NavBar/NavBar";
+import HeaderBar from "../../components/HeaderBar/HeaderBar";
+import NavBar from "../../components/NavBar/NavBar";
 import './Layout.css';
 
 const Layout = ({children}) => {
     return (
         <div className='main'>
-            <div className='sideBar'>
+            <div className='sidebar'>
                 <NavBar/>
             </div>
             <div className='page'>
@@ -22,8 +22,3 @@ const Layout = ({children}) => {
 
 export default Layout;
 
-export function toggleMenu() {
-    var sidebar = document.querySelector('.sidebar')
-    sidebar.classList.toggle("sidebar-open");
-    console.log("toggle");
-}

@@ -2,6 +2,7 @@ import React from "react";
 import HeaderBar from '../Components/HeaderBar';
 import NavBar from '../Components/NavBar';
 import Container from '../Components/Container';
+import Listing from '../Components/listing';
 
 function Home() {
     return (
@@ -11,7 +12,7 @@ function Home() {
         </div>
         <div className='page'>
                 <HeaderBar className='headerBar'name="Quentin"/>
-                <Container className='container'/>
+                <Listing className='listing'/>
         </div>
         
     </div>

@@ -35,7 +35,6 @@ function NavBar(props) {
                 redirect_uri: window.location.origin
                 }}
             >
-            <li><AuthLogin to="/login">Log-in</AuthLogin></li>
             <AuthProfile></AuthProfile>
             <AuthLogout></AuthLogout>
         </Auth0Provider>

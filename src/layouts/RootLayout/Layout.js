@@ -1,5 +1,5 @@
-import HeaderBar from "../../components/HeaderBar/HeaderBar";
-import NavBar from "../../components/NavBar/NavBar";
+import HeaderBar from "../../Components/HeaderBar/HeaderBar";
+import NavBar from "../../Components/NavBar/NavBar";
 import './Layout.scss';
 
 const Layout = ({children}) => {

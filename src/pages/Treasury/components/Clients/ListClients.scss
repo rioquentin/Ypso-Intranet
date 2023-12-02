@@ -1,0 +1,90 @@
+@import '../../../../styles/variables';
+
+.clients-container {
+  max-width: 100%;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+
+  .clients-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    h1 {
+      font-family: $font-title-h1;
+      font-size: 2rem;
+      color: $blue;
+      margin-left: 1rem;
+    }
+  }
+
+  .clients-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+
+    thead {
+      background: #333;
+      color: white;
+
+      th {
+        padding: 1rem;
+        text-align: center;
+        border: 1px solid whitesmoke;
+        width: 18%;
+      }
+    }
+
+    tbody td {
+      padding: 0.5rem;
+      border-bottom: 1px solid #ccc;
+      text-align: center;
+      font-size: 16px;
+    }
+
+    tr:nth-child(even) {
+      background-color: rgb(224, 212, 212);
+    }
+  }
+
+  .buttonListing {
+    font-size: 15px;
+    font-weight: 700;
+    padding: 1rem;
+    margin-right: 1rem;
+    border: none;
+    border-radius: 10px;
+    background: $blue;
+    color: white;
+    cursor: pointer;
+    float: right;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  .icon-button {
+    font-size: 16px;
+    padding: 5px;
+    margin: 0 5px;
+    cursor: pointer;
+
+    &:hover {
+      color: red;
+    }
+  }
+  .clients-table th {
+    cursor: pointer;
+  
+    .sort-icon {
+      margin-left: 15px;
+      font-size: 16px;
+    }
+  }
+}

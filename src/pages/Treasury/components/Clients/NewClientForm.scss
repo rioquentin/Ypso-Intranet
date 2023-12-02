@@ -1,0 +1,80 @@
+@import '../../../../styles/variables';
+
+.form-container {
+  background-color: $white;
+  padding: 2rem;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  h2 {
+    font-size: 30px;
+    color: $blue;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .radio-group {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem 0;
+
+    label {
+      margin: 0 1rem;
+      font-weight: normal;
+      font-size: 20px;
+    }
+  }
+
+  input,
+  select {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 18px;
+  }
+
+  button {
+    padding: 10px 20px;
+    background-color: $blue;
+    color: $white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: 500;
+    margin-top: 1rem;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  .form-buttons {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1rem;
+
+    button[type="button"] {
+      background-color: #d9534f;
+    }
+  }
+
+  .error {
+    color: red;
+    font-weight: bold;
+    margin-top: 5px;
+    font-size: 1em;
+    text-align: center;
+    border: 2px solid red;
+    padding: 5px;
+  }
+}
